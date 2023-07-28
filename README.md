@@ -11,4 +11,8 @@ conda activate anti-dreambooth
 pip install -r requirements.txt  
 ```
 Pretrained stable diffusion model v2.1 is used.Please [download it](https://huggingface.co/stabilityai/stable-diffusion-2-1-base) and put it under `./stable-diffusion/`.
-##How to run
+## How to run
+Run default ASPL attack:
+```bash
+bash attacks/attack_with_aspl.sh
+```
