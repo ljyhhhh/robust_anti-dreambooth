@@ -14,5 +14,22 @@ Pretrained stable diffusion model v2.1 is used.Please [download it](https://hugg
 ## How to run
 Run default ASPL attack:
 ```bash
-bash attacks/attack_with_aspl.sh
+bash scripts/attack_with_aspl.sh
+```
+It will first generate perturbed images with ASPL attack and train the dreambooth model on them. After training, the model will generate the instance images.
+
+Run ASPL_REM attack:
+```bash
+bash scripts/aspl_REM.sh
+```
+It will generate perturbed images with ASPL_REM attack.
+
+Run adversarial defense to ASPL attack:
+```bash
+bash scripts/aspl_adv.sh
+```
+
+Run adversarial defense to ASPL_REM attack:
+```bash
+bash scripts/aspl_REM_adv.sh
 ```
